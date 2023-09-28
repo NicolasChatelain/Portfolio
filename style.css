@@ -1,11 +1,17 @@
 body {
     background-color: hsl(211, 100%, 50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+
+display: inline-block;
+
 }
 
 h1 {
@@ -13,4 +19,28 @@ h1 {
     font-size: 5em;
     font-family: monospace;
     color: #F3F4F7;
+    letter-spacing: 5px;
+    border-right: 5px solid #F3F4F7;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 4s infinite,
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+
+    50% {
+        border-color: transparent
+    }
+
+}
+
+@keyframes typing {
+    
+    0% {width: 0;} 
+    66.66% {width: 100%}
+    100% {width: 100%;}
+
 }
