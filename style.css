@@ -1,0 +1,16 @@
+body {
+    background-color: hsl(211, 100%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+
+    font-size: 5em;
+    font-family: monospace;
+    color: #F3F4F7;
+}
